@@ -1,0 +1,62 @@
+$red: #fc0d1b;
+$green: #29fd2f;
+$yellow: #fffd38;
+$blue: #2cfffe;
+
+.totem { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+	// cursor: pointer;
+
+	& > * {
+		margin-bottom: 10px;
+	}
+}
+
+.triangle {
+	border-bottom: 15px solid #999999;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	transition: border-bottom-color 300ms ease;
+
+	&:hover {
+		border-bottom-color: $red;
+	}
+}
+
+.circle {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color: #999999;
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.square {
+	height: 16px;
+	width: 16px;
+	background-color: #999999;
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $yellow;
+	}
+}
+
+.diamond {
+	height: 14px;
+	width: 14px;
+	background-color: #999999;
+	transform: rotate(-45deg);
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $blue;
+	}
+}

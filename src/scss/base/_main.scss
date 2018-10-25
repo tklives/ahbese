@@ -1,0 +1,53 @@
+/**
+ * base/_main.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+// @import '';
+body {
+  // font-family: helvetica, Arial;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 16px;
+  color: #999999;
+  background-color: #fcf7f5;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	display: block;
+	color: #999999;
+	text-decoration: none;
+	text-align: right;
+	font-size: 14px;
+	font-style: italic;
+
+	&:hover { 
+		text-decoration: underline; 
+	}
+}
+
+main {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+p {
+	margin-bottom: 10px;
+	max-width: 320px;
+	line-height: 1.5;
+	text-align: center;
+}
+

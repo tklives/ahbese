@@ -1,0 +1,17 @@
+{
+  "extends":[
+    "stylelint-config-standard",
+    "stylelint-config-concentric-order"
+  ],
+  "syntax": "scss",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "ignoreFiles": "src/scss/generic/_normalize.scss",
+  "rules": {
+    "at-rule-no-unknown": null,
+    "max-empty-lines": 3,
+    "value-list-max-empty-lines": 1
+  }
+
+}
