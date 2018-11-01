@@ -108,7 +108,7 @@ gulp.task('sass', () => {
         options.dep.normalize,
         options.dep.avalancheCss
       ],
-      outputStyle: 'compressed',
+      // outputStyle: 'compressed',
       errLogToConsole: true
     }))
     .pipe(postcss([

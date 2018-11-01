@@ -1,0 +1,91 @@
+// body { background: tomato !important; }
+
+$color--opaque-white: rgba(252,247,245, .25);
+
+.dark-theme { 
+	background-color: $black;
+	// color: rgba(252,247,245,.5);
+	color: $white;
+	text-shadow: 1px 0px 0 rgba(252, 247, 245, .1);
+}
+.dark-theme .hdg--1 { 
+	color: $white;
+	// text-shadow: 0px 0px 40px rgb(252, 247, 245),
+	// 			 1px 1px 0 rgba(252, 247, 245, .5); 
+}
+
+.dark-theme .totem {
+}
+
+.dark-theme .triangle {
+	border-bottom: 15px solid $color--opaque-white;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	transition: border-bottom-color 300ms ease;
+
+	&:hover {
+		border-bottom-color: $red;
+	}
+}
+
+.dark-theme .circle {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color: $color--opaque-white;
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.dark-theme .square {
+	height: 16px;
+	width: 16px;
+	background-color: $color--opaque-white;
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $yellow;
+	}
+}
+
+.dark-theme .diamond {
+	height: 14px;
+	width: 14px;
+	background-color: $color--opaque-white;
+	transform: rotate(-45deg);
+	transition: background-color 300ms ease;
+
+	&:hover {
+		background-color: $blue;
+	}
+}
+
+.dark-theme .mail {
+	background-color: $color--opaque-white;
+	border: 2px solid $black;
+    box-shadow: 0 0 4px 1px $black;
+    cursor: pointer;
+
+	&:after,
+	&:before {
+	    background: $black;
+	    border: 1px solid $black;
+	}
+	
+	&:hover {
+		background-color: $purple;
+		box-shadow: 0 0 8px 3px $purple;
+		border-color: $white;
+
+		&:after,
+		&:before {
+			background: $white;
+		    border-color: $white;
+		}
+	}
+
+
+}
